@@ -3,22 +3,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f0f0f0;
   margin: 0;
 }
 
 .container {
   text-align: center;
+  width: 100%; /* Adjusted for full width on smaller screens */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
 h1 {
   color: #333;
+  font-size: 35px;
+  margin-bottom: 20px;
 }
 
 input[type="text"] {
   padding: 10px;
   margin: 10px;
+  width: calc(100% - 20px);
+  max-width: 300px;
 }
 
 button {
@@ -40,4 +47,21 @@ button:hover {
   margin: 20px 0;
   font-size: 18px;
   color: #333;
+}
+
+/* Media query for smaller screens (max-width: 600px) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px; /* Decreased font size for smaller screens */
+  }
+
+  input[type="text"],
+  button {
+    width: 100%; /* Adjusted to full width on smaller screens */
+    max-width: none; /* Removed maximum width */
+  }
+
+  .response {
+    font-size: 16px; /* Smaller font size for responses on smaller screens */
+  }
 }

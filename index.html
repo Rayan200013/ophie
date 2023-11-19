@@ -2,16 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello User</title>
+    <title>Hello Page</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <h1>Welcome to OPHIE</h1>
       <input type="text" id="nameInput" placeholder="Enter your name" />
-      <button onclick="sayHello()">Submit</button>
+      <button onclick="sayHello()">submit</button>
       <div class="response" id="response"></div>
-      <button onclick="deployPhrase()">surprise</button>
+      <div class="buttons">
+        <button onclick="deployPhrase()">Surprise</button>
+        <button onclick="deployPhraseFR()">Surprise FR</button>
+      </div>
+      <div class="response" id="response-fr"></div>
+      <button onclick="reset()">Refresh</button>
     </div>
 
     <script src="script.js"></script>
