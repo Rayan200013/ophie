@@ -17,7 +17,7 @@ function deployPhrase() {
   const responseDiv = document.getElementById("response");
 
   if (name) {
-    responseDiv.innerHTML = `${name}, if you were cheese, you'd be the gouda-est! Keep spreading that cheesy joy!`;
+    responseDiv.innerHTML = `${name}, if you were cheese, you'd be the gouda-est! Keep spreading that cheesy joy! 🥳🤩❤`;
 
     // Add animations or effects here
     responseDiv.style.animation = "celebrate 2s ease infinite";
